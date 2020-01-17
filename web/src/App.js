@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Global.css';
 import './App.css';
+import './Sidebar.css'
 
 // componente: bloco isolado de html css e js o qual não intefere no restante da aplicação
 // estado: infos mantidas pelo componente (lembrar: imutabilidade)
@@ -13,7 +14,7 @@ function App()
 {
 	
 	return (
-		<div id = "App">
+		<div id = "app">
 			<aside>
 				<strong>Cadastrar</strong>
 				<form>
@@ -28,29 +29,29 @@ function App()
 						<input name="techs" id="techs" required />
 					</div>
 
-					<div class="input-block">
-							<label htmlFor="username_github">Usuário do Github</label>
-							<input name="github_username" id="username_github" required />
-						</div>
-						<div className="input-group">
-							<label htmlFor="latitude">latitude</label>
+					<div class="input-group">
+						<div className="input-block">
+							<label htmlFor="latitude">Latitude</label>
 							<input name="latitude" id="latitude" required />
-
-						<div className="input-group">
-							<label htmlFor="longitude">longitude</label>
+						</div>
+						<div className="input-block">
+							<label htmlFor="longitude">Longitude</label>
 							<input name="longitude" id="longitude" required />
 						</div>
 					</div>
 
-					<button type = "submit">Salvar </button>
+					<button type="submit">Salvar</button>
 				</form>
 				
 			</aside>
 
 
 			<main>
+				<div></div>
+				<ul></ul>
 
 			</main>
+			
 		</div>
 	);
 }
