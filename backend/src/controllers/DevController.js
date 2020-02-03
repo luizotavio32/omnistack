@@ -1,6 +1,6 @@
 const axios = require('axios')
 const Dev = require('../models/dev')
-const parseStringAsArray = require('../utils/parseStringAsArray')
+const ParseStringAsArray = require('../utils/ParseStringAsArray')
 
 
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
 
             
         
-            const techsArray = parseStringAsArray(techs)
+            const techsArray = ParseStringAsArray(techs)
             
             const location = {
                 type: 'Point',
